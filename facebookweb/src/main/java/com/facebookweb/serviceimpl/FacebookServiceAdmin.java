@@ -13,4 +13,11 @@ public class FacebookServiceAdmin implements FacebookServiceInterface {
 		return i;
 	}
 
+	@Override
+	public boolean loginProfile(FacebookEmployee fe) {
+		FacebookDAOInterface fd=FacebookDAOInterface.createObject("admin");
+		boolean i=fd.loginProfile(fe);
+		return i;
+	}
+
 }

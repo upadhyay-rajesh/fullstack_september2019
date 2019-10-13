@@ -11,4 +11,10 @@ public class FacebookServiceUser implements FacebookServiceInterface {
 		return 0;
 	}
 
+	@Override
+	public boolean loginProfile(FacebookEmployee fe) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }

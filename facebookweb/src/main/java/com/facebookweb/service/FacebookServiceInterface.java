@@ -17,5 +17,7 @@ public interface FacebookServiceInterface {
 	}
 
 	int createProfile(FacebookEmployee fe);
+
+	boolean loginProfile(FacebookEmployee fe);
 	
 }

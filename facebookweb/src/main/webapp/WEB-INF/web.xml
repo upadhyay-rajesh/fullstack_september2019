@@ -4,14 +4,27 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <filter>
+  	<filter-name>TimeFilter</filter-name>
+  	<display-name>TimeFilter</display-name>
+  	<description></description>
+  	<filter-class>com.facebookweb.controller.TimeFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>TimeFilter</filter-name>
+  	<url-pattern>/GlobalServlet</url-pattern>
+  </filter-mapping>
+  <listener>
+  	<listener-class>com.facebookweb.helper.SListener</listener-class>
+  </listener>
   <servlet>
-  	<servlet-name>GlobalServlet</servlet-name>
+  	<servlet-name>abc</servlet-name>
   	<display-name>GlobalServlet</display-name>
   	<description></description>
   	<servlet-class>com.facebookweb.controller.GlobalServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>GlobalServlet</servlet-name>
+  	<servlet-name>abc</servlet-name>
   	<url-pattern>/GlobalServlet</url-pattern>
   </servlet-mapping>
 </web-app>

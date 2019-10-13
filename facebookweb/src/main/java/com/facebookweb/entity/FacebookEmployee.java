@@ -5,6 +5,17 @@ public class FacebookEmployee {
 	private String pass;
 	private String email;
 	private String address;
+	
+	private long f_id;
+	
+	
+	
+	public long getF_id() {
+		return f_id;
+	}
+	public void setF_id(long f_id) {
+		this.f_id = f_id;
+	}
 	public String getName() {
 		return name;
 	}
