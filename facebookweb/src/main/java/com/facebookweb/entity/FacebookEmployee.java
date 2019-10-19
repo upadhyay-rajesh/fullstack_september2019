@@ -10,6 +10,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="contact") //optional
+
 public class FacebookEmployee {
 	private String name;
 	private String pass;
