@@ -12,7 +12,9 @@ public interface FacebookDAOInterface {
 	static FacebookDAOInterface createObject(String a) {
 		FacebookDAOInterface fd=null;
 		if(a.equals("admin")) {
-			fd=new FacebookDAOAdmin();
+			if(fd==null) {
+				fd=new FacebookDAOAdmin();
+			}
 		}
 		else {
 			fd=new FacebookDAOUser();

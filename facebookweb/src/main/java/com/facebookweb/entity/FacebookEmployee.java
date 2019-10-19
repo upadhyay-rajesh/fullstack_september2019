@@ -1,15 +1,27 @@
 package com.facebookweb.entity;
 
+import javax.annotation.Generated;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="contact") //optional
 public class FacebookEmployee {
 	private String name;
 	private String pass;
 	private String email;
 	private String address;
 	
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)  //to generate primary key value automatically
 	private long f_id;
 	
 	
-	
+	//@Column(name="cc",length=7) //optional
 	public long getF_id() {
 		return f_id;
 	}

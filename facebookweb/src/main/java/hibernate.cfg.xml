@@ -4,17 +4,18 @@
 		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
-        <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+         <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
         <property name="hibernate.connection.password">rajesh</property>
         <property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>
         <property name="hibernate.connection.username">system</property>
         
-        <property name="hibernate.dialect">org.hibernate.dialect.OracleDialect</property>
+       <property name="hibernate.dialect">org.hibernate.dialect.OracleDialect</property> 
     	<property name="connection.pool_size">10</property>
     	<property name="show_sql">true</property>
-        <property name="hbm2ddl.auto">create</property>
+       <!--  <property name="hbm2ddl.auto">update</property>  -->
         
-        <mapping resource="contact.hbm.xml"/>
+       <!--  <mapping resource="contact.hbm.xml"/> -->
+       <mapping class="com.facebookweb.entity.FacebookEmployee" />
        
     </session-factory>
 </hibernate-configuration>

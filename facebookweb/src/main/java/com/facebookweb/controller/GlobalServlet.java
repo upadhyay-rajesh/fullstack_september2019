@@ -28,7 +28,7 @@ public class GlobalServlet extends HttpServlet {
 			String address=request.getParameter("address");
 			
 			FacebookEmployee fe=new FacebookEmployee();
-			fe.setF_id((long)(Math.random()*10000));
+			//fe.setF_id((long)(Math.random()*10000));
 			fe.setAddress(address);
 			fe.setEmail(email);
 			fe.setName(name);

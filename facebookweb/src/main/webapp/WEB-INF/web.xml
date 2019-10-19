@@ -14,9 +14,9 @@
   	<filter-name>TimeFilter</filter-name>
   	<url-pattern>/GlobalServlet</url-pattern>
   </filter-mapping>
-  <listener>
+  <!-- <listener>
   	<listener-class>com.facebookweb.helper.SListener</listener-class>
-  </listener>
+  </listener> -->
   <servlet>
   	<servlet-name>abc</servlet-name>
   	<display-name>GlobalServlet</display-name>
