@@ -16,6 +16,7 @@ public interface FacebookDAOInterface {
 				fd=new FacebookDAOAdmin();
 			}
 		}
+		//dscd
 		else {
 			fd=new FacebookDAOUser();
 		}
