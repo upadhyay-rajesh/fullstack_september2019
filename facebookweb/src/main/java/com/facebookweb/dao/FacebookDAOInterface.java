@@ -23,6 +23,7 @@ public interface FacebookDAOInterface {
 	}
 
 	int createProfile(FacebookEmployee fe);
+	int createProfile1(FacebookEmployee fe);
 
 	boolean loginProfile(FacebookEmployee fe);
 

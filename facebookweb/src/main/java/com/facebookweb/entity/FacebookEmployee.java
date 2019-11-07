@@ -6,11 +6,18 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.*;
 import javax.persistence.Table;
 
 @Entity
 @Table(name="contact") //optional
-
+@NamedQueries(
+		{
+			@NamedQuery(name = "login", query = "from com.facebookweb.entity.FacebookEmployee f where f.name=:nn and f.pass=:pp"),
+			@NamedQuery(name = "friendlist", query = "from com.facebookweb.entity.FacebookEmployee f where f.name=:n1 ")
+			
+		}
+		)
 public class FacebookEmployee {
 	private String name;
 	private String pass;

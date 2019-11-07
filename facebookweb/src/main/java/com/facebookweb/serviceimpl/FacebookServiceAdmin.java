@@ -9,7 +9,7 @@ public class FacebookServiceAdmin implements FacebookServiceInterface {
 	@Override
 	public int createProfile(FacebookEmployee fe) {
 		FacebookDAOInterface fd=FacebookDAOInterface.createObject("admin");
-		int i=fd.createProfile(fe);
+		int i=fd.createProfile1(fe);
 		return i;
 	}
 

@@ -16,4 +16,10 @@ public class FacebookDAOUser implements FacebookDAOInterface {
 		return false;
 	}
 
+	@Override
+	public int createProfile1(FacebookEmployee fe) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }
